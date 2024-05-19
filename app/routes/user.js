@@ -5,6 +5,6 @@ const path = "user";
 
 //**Ruta: /user GET */
 router.get("/" + path, controller.getData);
-router.post("/");
+router.post("/" + path, controller.insertData);
 
 module.exports = router;
