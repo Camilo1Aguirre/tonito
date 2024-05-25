@@ -1,5 +1,3 @@
-// ./app/routes/user.mjs
-
 import express from 'express';
 import {
   getAllUsers,

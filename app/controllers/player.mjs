@@ -1,26 +1,26 @@
-import PlayerModel from '../models/user.mjs';
+import PlayerModel from '../models/player.mjs';
 import { getAllItems } from './controllerMethods/getAllItems.mjs';
 import { createItem } from './controllerMethods/createItem.mjs';
 import { getItemById } from './controllerMethods/getItemById.mjs';
 import { updateItemById } from './controllerMethods/updateItembyId.mjs';
 import { deleteItemById } from './controllerMethods/deleteItemById.mjs';
 
-export const getAllUsers = async (req, res) => {
+export const getAllPlayers = async (req, res) => {
   await getAllItems(PlayerModel, req, res);
 };
 
-export const createUser = async (req, res) => {
+export const createPlayer = async (req, res) => {
   await createItem(PlayerModel, req, res);
 };
 
-export const getUserById = async (req, res) => {
+export const getPlayerById = async (req, res) => {
   await getItemById(PlayerModel, req, res);
 };
 
-export const updateUserById = async (req, res) => {
+export const updatePlayerById = async (req, res) => {
   await updateItemById(PlayerModel, req, res);
 };
 
-export const deleteUserById = async (req, res) => {
+export const deletePlayerById = async (req, res) => {
   await deleteItemById(PlayerModel, req, res);
 };
