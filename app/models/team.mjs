@@ -4,11 +4,6 @@ import mongoosePaginate from 'mongoose-paginate-v2';
 // Definición del esquema
 const teamSchema = new Schema(
   {
-    idFinance: {
-      type: Schema.Types.ObjectId,
-      ref: 'Finance',
-      required: true,
-    },
     name: {
       type: String,
       required: true,
@@ -18,6 +13,7 @@ const teamSchema = new Schema(
       type: Schema.Types.ObjectId,
       ref: 'Coach',
       required: true,
+      unique: true,
     },
     conference: {
       type: Boolean,
@@ -30,11 +26,11 @@ const teamSchema = new Schema(
     },
     wins: {
       type: Number,
-      required: true,
+      default: 0,
     },
     loses: {
       type: Number,
-      required: true,
+      default: 0,
     },
   },
   {

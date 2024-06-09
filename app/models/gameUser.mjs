@@ -14,6 +14,11 @@ const gameUserSchema = new Schema(
       required: true,
       maxlength: 24,
     },
+    team: {
+      type: String,
+      required: true,
+      maxlength: 24,
+    },
   },
   {
     versionKey: false,

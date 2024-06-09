@@ -9,10 +9,10 @@ import {
 
 const router = express.Router();
 
-// Ruta: /Teams GET
-router.get('/', getAllTeams);
 // Ruta: /Teams POST
 router.post('/', createTeam);
+// Ruta: /Teams GET
+router.get('/', getAllTeams);
 // Ruta: /Teams/:id GET
 router.get('/:id', getTeamById);
 // Ruta: /Teams/:id PUT

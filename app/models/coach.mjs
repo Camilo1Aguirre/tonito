@@ -7,7 +7,6 @@ const coachSchema = new Schema(
     idStyle: {
       type: Schema.Types.ObjectId,
       ref: 'Style',
-      unique: true,
       required: true,
     },
     name: {

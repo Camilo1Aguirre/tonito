@@ -10,9 +10,8 @@ const draftSchema = new Schema(
       required: true,
     },
     position: {
-      type: String,
+      type: Number,
       required: true,
-      maxlength: 5,
     },
   },
   {
