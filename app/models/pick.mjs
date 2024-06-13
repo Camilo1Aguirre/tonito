@@ -9,16 +9,7 @@ const pickSchema = new Schema(
       ref: 'Team',
       required: true,
     },
-    idLottery: {
-      type: Schema.Types.ObjectId,
-      ref: 'Lottery',
-      required: true,
-    },
     round: {
-      type: Number,
-      required: true,
-    },
-    position: {
       type: Number,
       required: true,
     },
