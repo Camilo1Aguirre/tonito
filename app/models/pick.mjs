@@ -21,6 +21,11 @@ const pickSchema = new Schema(
       type: Number,
       required: true,
     },
+    selection: {
+      type: Number,
+      required: true,
+      default: 0,
+    },
   },
   {
     versionKey: false,
