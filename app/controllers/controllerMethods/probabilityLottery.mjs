@@ -1,4 +1,3 @@
-import StandingModel from '../../models/standing.mjs';
 import LotteryModel from '../../models/lottery.mjs';
 
 export async function probabilityLottery(req, res) {
