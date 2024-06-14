@@ -4,7 +4,7 @@ import mongoosePaginate from 'mongoose-paginate-v2';
 // Definición del esquema
 const lotterySchema = new Schema(
   {
-    idStandings: {
+    idStanding: {
       type: Schema.Types.ObjectId,
       ref: 'Standing',
       required: true,
